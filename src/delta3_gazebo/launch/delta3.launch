@@ -1,0 +1,7 @@
+<launch>
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+        <arg name="world_name" value="$(find delta3_gazebo)/worlds/delta3.world" />
+    </include>
+    <node name="delta3_sdf" pkg="gazebo_ros" type="spawn_model" args="-file $(find delta3_description)/models/model.sdf -sdf -model delta3">
+    </node>
+</launch>

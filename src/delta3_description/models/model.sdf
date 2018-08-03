@@ -1,0 +1,1430 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+<model name="delta3">
+    <static>false</static>
+    
+    <link name="upper_side1">
+        <pose>0.0 -1.4433756729740643 5.0 0.0 1.5707963267948966 0.0</pose>
+        <gravity>0</gravity>
+        <inertial>
+            <mass>0.1</mass>
+            <inertia>
+                <ixx>0.0005</ixx>
+                <iyy>0.0005</iyy>
+                <izz>0.0005</izz>
+            </inertia>
+        </inertial>
+        <collision name="col">
+            <geometry>
+                <cylinder>
+                    <radius>0.05</radius>
+                    <length>5</length>
+                  </cylinder>
+            </geometry>
+        </collision>
+        <visual name="visual">
+            <geometry>
+                <cylinder>
+                    <radius>0.05</radius>
+                    <length>5</length>
+                </cylinder>
+            </geometry>
+          </visual>
+    </link>
+    
+    <link name="upper_side2">
+        <pose>1.25 0.7216878364870318 5.0 0.0 1.5707963267948966 2.0943951023931953</pose>
+        <gravity>0</gravity>
+        <inertial>
+            <mass>0.1</mass>
+            <inertia>
+                <ixx>0.0005</ixx>
+                <iyy>0.0005</iyy>
+                <izz>0.0005</izz>
+            </inertia>
+        </inertial>
+        <collision name="col">
+            <geometry>
+                <cylinder>
+                    <radius>0.05</radius>
+                    <length>5</length>
+                  </cylinder>
+            </geometry>
+        </collision>
+        <visual name="visual">
+            <geometry>
+                <cylinder>
+                    <radius>0.05</radius>
+                    <length>5</length>
+                </cylinder>
+            </geometry>
+          </visual>
+    </link>
+    
+    <link name="upper_side3">
+        <pose>-1.25 0.7216878364870318 5.0 0.0 1.5707963267948966 -2.0943951023931953</pose>
+        <gravity>0</gravity>
+        <inertial>
+            <mass>0.1</mass>
+            <inertia>
+                <ixx>0.0005</ixx>
+                <iyy>0.0005</iyy>
+                <izz>0.0005</izz>
+            </inertia>
+        </inertial>
+        <collision name="col">
+            <geometry>
+                <cylinder>
+                    <radius>0.05</radius>
+                    <length>5</length>
+                  </cylinder>
+            </geometry>
+        </collision>
+        <visual name="visual">
+            <geometry>
+                <cylinder>
+                    <radius>0.05</radius>
+                    <length>5</length>
+                </cylinder>
+            </geometry>
+          </visual>
+    </link>
+    
+    <link name="upper_rib1">
+        <pose>0.0 1.4433756729740643 5.0 0.0 1.5707963267948966 1.5707963267948966</pose>
+        <gravity>0</gravity>
+        <inertial>
+            <mass>0.1</mass>
+            <inertia>
+                <ixx>0.0005</ixx>
+                <iyy>0.0005</iyy>
+                <izz>0.0005</izz>
+            </inertia>
+        </inertial>
+        <collision name="col">
+            <geometry>
+                <cylinder>
+                    <radius>0.05</radius>
+                    <length>2.8867513459481287</length>
+                  </cylinder>
+            </geometry>
+        </collision>
+        <visual name="visual">
+            <geometry>
+                <cylinder>
+                    <radius>0.05</radius>
+                    <length>2.8867513459481287</length>
+                </cylinder>
+            </geometry>
+          </visual>
+    </link>
+    
+    <link name="upper_rib2">
+        <pose>-1.25 -0.7216878364870318 5.0 0.0 1.5707963267948966 0.5235987755982988</pose>
+        <gravity>0</gravity>
+        <inertial>
+            <mass>0.1</mass>
+            <inertia>
+                <ixx>0.0005</ixx>
+                <iyy>0.0005</iyy>
+                <izz>0.0005</izz>
+            </inertia>
+        </inertial>
+        <collision name="col">
+            <geometry>
+                <cylinder>
+                    <radius>0.05</radius>
+                    <length>2.8867513459481287</length>
+                  </cylinder>
+            </geometry>
+        </collision>
+        <visual name="visual">
+            <geometry>
+                <cylinder>
+                    <radius>0.05</radius>
+                    <length>2.8867513459481287</length>
+                </cylinder>
+            </geometry>
+          </visual>
+    </link>
+    
+    <link name="upper_rib3">
+        <pose>1.25 -0.7216878364870318 5.0 0.0 1.5707963267948966 -0.5235987755982988</pose>
+        <gravity>0</gravity>
+        <inertial>
+            <mass>0.1</mass>
+            <inertia>
+                <ixx>0.0005</ixx>
+                <iyy>0.0005</iyy>
+                <izz>0.0005</izz>
+            </inertia>
+        </inertial>
+        <collision name="col">
+            <geometry>
+                <cylinder>
+                    <radius>0.05</radius>
+                    <length>2.8867513459481287</length>
+                  </cylinder>
+            </geometry>
+        </collision>
+        <visual name="visual">
+            <geometry>
+                <cylinder>
+                    <radius>0.05</radius>
+                    <length>2.8867513459481287</length>
+                </cylinder>
+            </geometry>
+          </visual>
+    </link>
+    
+    <link name="upper_arm1">
+        <pose>0.0 -1.9433756729740643 5.0 1.5707963267948966 1.5707963267948966 0.0</pose>
+        <gravity>0</gravity>
+        <inertial>
+            <mass>0.1</mass>
+            <inertia>
+                <ixx>0.0005</ixx>
+                <iyy>0.0005</iyy>
+                <izz>0.0005</izz>
+            </inertia>
+        </inertial>
+        <collision name="col">
+            <geometry>
+                <cylinder>
+                    <radius>0.05</radius>
+                    <length>1</length>
+                  </cylinder>
+            </geometry>
+        </collision>
+        <visual name="visual">
+            <geometry>
+                <cylinder>
+                    <radius>0.05</radius>
+                    <length>1</length>
+                </cylinder>
+            </geometry>
+          </visual>
+    </link>
+    
+    <link name="upper_arm2">
+        <pose>1.6830127018922194 0.9716878364870317 5.0 1.5707963267948966 1.5707963267948966 2.0943951023931953</pose>
+        <gravity>0</gravity>
+        <inertial>
+            <mass>0.1</mass>
+            <inertia>
+                <ixx>0.0005</ixx>
+                <iyy>0.0005</iyy>
+                <izz>0.0005</izz>
+            </inertia>
+        </inertial>
+        <collision name="col">
+            <geometry>
+                <cylinder>
+                    <radius>0.05</radius>
+                    <length>1</length>
+                  </cylinder>
+            </geometry>
+        </collision>
+        <visual name="visual">
+            <geometry>
+                <cylinder>
+                    <radius>0.05</radius>
+                    <length>1</length>
+                </cylinder>
+            </geometry>
+          </visual>
+    </link>
+    
+    <link name="upper_arm3">
+        <pose>-1.6830127018922194 0.9716878364870317 5.0 1.5707963267948966 1.5707963267948966 -2.0943951023931953</pose>
+        <gravity>0</gravity>
+        <inertial>
+            <mass>0.1</mass>
+            <inertia>
+                <ixx>0.0005</ixx>
+                <iyy>0.0005</iyy>
+                <izz>0.0005</izz>
+            </inertia>
+        </inertial>
+        <collision name="col">
+            <geometry>
+                <cylinder>
+                    <radius>0.05</radius>
+                    <length>1</length>
+                  </cylinder>
+            </geometry>
+        </collision>
+        <visual name="visual">
+            <geometry>
+                <cylinder>
+                    <radius>0.05</radius>
+                    <length>1</length>
+                </cylinder>
+            </geometry>
+          </visual>
+    </link>
+    
+    <link name="hor_upper_arm1">
+        <pose>0.0 -2.4433756729740645 5.0 0.0 1.5707963267948966 0.0</pose>
+        <gravity>0</gravity>
+        <inertial>
+            <mass>0.1</mass>
+            <inertia>
+                <ixx>0.0005</ixx>
+                <iyy>0.0005</iyy>
+                <izz>0.0005</izz>
+            </inertia>
+        </inertial>
+        <collision name="col">
+            <geometry>
+                <cylinder>
+                    <radius>0.05</radius>
+                    <length>0.5</length>
+                  </cylinder>
+            </geometry>
+        </collision>
+        <visual name="visual">
+            <geometry>
+                <cylinder>
+                    <radius>0.05</radius>
+                    <length>0.5</length>
+                </cylinder>
+            </geometry>
+          </visual>
+    </link>
+    
+    <link name="hor_upper_arm2">
+        <pose>2.116025403784439 1.2216878364870316 5.0 0.0 1.5707963267948966 2.0943951023931953</pose>
+        <gravity>0</gravity>
+        <inertial>
+            <mass>0.1</mass>
+            <inertia>
+                <ixx>0.0005</ixx>
+                <iyy>0.0005</iyy>
+                <izz>0.0005</izz>
+            </inertia>
+        </inertial>
+        <collision name="col">
+            <geometry>
+                <cylinder>
+                    <radius>0.05</radius>
+                    <length>0.5</length>
+                  </cylinder>
+            </geometry>
+        </collision>
+        <visual name="visual">
+            <geometry>
+                <cylinder>
+                    <radius>0.05</radius>
+                    <length>0.5</length>
+                </cylinder>
+            </geometry>
+          </visual>
+    </link>
+    
+    <link name="hor_upper_arm3">
+        <pose>-2.116025403784439 1.2216878364870316 5.0 0.0 1.5707963267948966 -2.0943951023931953</pose>
+        <gravity>0</gravity>
+        <inertial>
+            <mass>0.1</mass>
+            <inertia>
+                <ixx>0.0005</ixx>
+                <iyy>0.0005</iyy>
+                <izz>0.0005</izz>
+            </inertia>
+        </inertial>
+        <collision name="col">
+            <geometry>
+                <cylinder>
+                    <radius>0.05</radius>
+                    <length>0.5</length>
+                  </cylinder>
+            </geometry>
+        </collision>
+        <visual name="visual">
+            <geometry>
+                <cylinder>
+                    <radius>0.05</radius>
+                    <length>0.5</length>
+                </cylinder>
+            </geometry>
+          </visual>
+    </link>
+    
+    <link name="lower_side1">
+        <pose>0.0 -0.5773502691896257 2.0 0.0 1.5707963267948966 0.0</pose>
+        <gravity>0</gravity>
+        <inertial>
+            <mass>0.1</mass>
+            <inertia>
+                <ixx>0.0005</ixx>
+                <iyy>0.0005</iyy>
+                <izz>0.0005</izz>
+            </inertia>
+        </inertial>
+        <collision name="col">
+            <geometry>
+                <cylinder>
+                    <radius>0.05</radius>
+                    <length>0.5</length>
+                  </cylinder>
+            </geometry>
+        </collision>
+        <visual name="visual">
+            <geometry>
+                <cylinder>
+                    <radius>0.05</radius>
+                    <length>0.5</length>
+                </cylinder>
+            </geometry>
+          </visual>
+    </link>
+    
+    <link name="lower_side2">
+        <pose>0.5 0.28867513459481275 2.0 0.0 1.5707963267948966 2.0943951023931953</pose>
+        <gravity>0</gravity>
+        <inertial>
+            <mass>0.1</mass>
+            <inertia>
+                <ixx>0.0005</ixx>
+                <iyy>0.0005</iyy>
+                <izz>0.0005</izz>
+            </inertia>
+        </inertial>
+        <collision name="col">
+            <geometry>
+                <cylinder>
+                    <radius>0.05</radius>
+                    <length>0.5</length>
+                  </cylinder>
+            </geometry>
+        </collision>
+        <visual name="visual">
+            <geometry>
+                <cylinder>
+                    <radius>0.05</radius>
+                    <length>0.5</length>
+                </cylinder>
+            </geometry>
+          </visual>
+    </link>
+    
+    <link name="lower_side3">
+        <pose>-0.5 0.28867513459481275 2.0 0.0 1.5707963267948966 -2.0943951023931953</pose>
+        <gravity>0</gravity>
+        <inertial>
+            <mass>0.1</mass>
+            <inertia>
+                <ixx>0.0005</ixx>
+                <iyy>0.0005</iyy>
+                <izz>0.0005</izz>
+            </inertia>
+        </inertial>
+        <collision name="col">
+            <geometry>
+                <cylinder>
+                    <radius>0.05</radius>
+                    <length>0.5</length>
+                  </cylinder>
+            </geometry>
+        </collision>
+        <visual name="visual">
+            <geometry>
+                <cylinder>
+                    <radius>0.05</radius>
+                    <length>0.5</length>
+                </cylinder>
+            </geometry>
+          </visual>
+    </link>
+    
+    <link name="lower_rib1">
+        <pose>0.0 -0.28867513459481287 2.0 1.5707963267948966 1.5707963267948966 0.0</pose>
+        <gravity>0</gravity>
+        <inertial>
+            <mass>0.1</mass>
+            <inertia>
+                <ixx>0.0005</ixx>
+                <iyy>0.0005</iyy>
+                <izz>0.0005</izz>
+            </inertia>
+        </inertial>
+        <collision name="col">
+            <geometry>
+                <cylinder>
+                    <radius>0.05</radius>
+                    <length>0.5773502691896257</length>
+                  </cylinder>
+            </geometry>
+        </collision>
+        <visual name="visual">
+            <geometry>
+                <cylinder>
+                    <radius>0.05</radius>
+                    <length>0.5773502691896257</length>
+                </cylinder>
+            </geometry>
+          </visual>
+    </link>
+    
+    <link name="lower_rib2">
+        <pose>0.25 0.14433756729740638 2.0 1.5707963267948966 1.5707963267948966 2.0943951023931953</pose>
+        <gravity>0</gravity>
+        <inertial>
+            <mass>0.1</mass>
+            <inertia>
+                <ixx>0.0005</ixx>
+                <iyy>0.0005</iyy>
+                <izz>0.0005</izz>
+            </inertia>
+        </inertial>
+        <collision name="col">
+            <geometry>
+                <cylinder>
+                    <radius>0.05</radius>
+                    <length>0.5773502691896257</length>
+                  </cylinder>
+            </geometry>
+        </collision>
+        <visual name="visual">
+            <geometry>
+                <cylinder>
+                    <radius>0.05</radius>
+                    <length>0.5773502691896257</length>
+                </cylinder>
+            </geometry>
+          </visual>
+    </link>
+    
+    <link name="lower_rib3">
+        <pose>-0.25 0.14433756729740638 2.0 1.5707963267948966 1.5707963267948966 -2.0943951023931953</pose>
+        <gravity>0</gravity>
+        <inertial>
+            <mass>0.1</mass>
+            <inertia>
+                <ixx>0.0005</ixx>
+                <iyy>0.0005</iyy>
+                <izz>0.0005</izz>
+            </inertia>
+        </inertial>
+        <collision name="col">
+            <geometry>
+                <cylinder>
+                    <radius>0.05</radius>
+                    <length>0.5773502691896257</length>
+                  </cylinder>
+            </geometry>
+        </collision>
+        <visual name="visual">
+            <geometry>
+                <cylinder>
+                    <radius>0.05</radius>
+                    <length>0.5773502691896257</length>
+                </cylinder>
+            </geometry>
+          </visual>
+    </link>
+    
+    <link name="vertical_arm1_left">
+        <pose>0.25 -1.5103629710818451 3.5 0.556445208381 0.0 0.0</pose>
+        <gravity>0</gravity>
+        <inertial>
+            <mass>0.1</mass>
+            <inertia>
+                <ixx>0.0005</ixx>
+                <iyy>0.0005</iyy>
+                <izz>0.0005</izz>
+            </inertia>
+        </inertial>
+        <collision name="col">
+            <geometry>
+                <cylinder>
+                    <radius>0.05</radius>
+                    <length>3.532994594896641</length>
+                  </cylinder>
+            </geometry>
+        </collision>
+        <visual name="visual">
+            <geometry>
+                <cylinder>
+                    <radius>0.05</radius>
+                    <length>3.532994594896641</length>
+                </cylinder>
+            </geometry>
+          </visual>
+    </link>
+    
+    <link name="vertical_arm2_left">
+        <pose>1.1830127018922194 0.9716878364870319 3.5 0.5564452083809998 0.0 2.0943951023931953</pose>
+        <gravity>0</gravity>
+        <inertial>
+            <mass>0.1</mass>
+            <inertia>
+                <ixx>0.0005</ixx>
+                <iyy>0.0005</iyy>
+                <izz>0.0005</izz>
+            </inertia>
+        </inertial>
+        <collision name="col">
+            <geometry>
+                <cylinder>
+                    <radius>0.05</radius>
+                    <length>3.532994594896641</length>
+                  </cylinder>
+            </geometry>
+        </collision>
+        <visual name="visual">
+            <geometry>
+                <cylinder>
+                    <radius>0.05</radius>
+                    <length>3.532994594896641</length>
+                </cylinder>
+            </geometry>
+          </visual>
+    </link>
+    
+    <link name="vertical_arm3_left">
+        <pose>-1.4330127018922194 0.5386751345948126 3.5 0.5564452083809998 0.0 -2.0943951023931953</pose>
+        <gravity>0</gravity>
+        <inertial>
+            <mass>0.1</mass>
+            <inertia>
+                <ixx>0.0005</ixx>
+                <iyy>0.0005</iyy>
+                <izz>0.0005</izz>
+            </inertia>
+        </inertial>
+        <collision name="col">
+            <geometry>
+                <cylinder>
+                    <radius>0.05</radius>
+                    <length>3.532994594896641</length>
+                  </cylinder>
+            </geometry>
+        </collision>
+        <visual name="visual">
+            <geometry>
+                <cylinder>
+                    <radius>0.05</radius>
+                    <length>3.532994594896641</length>
+                </cylinder>
+            </geometry>
+          </visual>
+    </link>
+    
+    <link name="vertical_arm1_right">
+        <pose>-0.25 -1.5103629710818451 3.5 0.556445208381 0.0 0.0</pose>
+        <gravity>0</gravity>
+        <inertial>
+            <mass>0.1</mass>
+            <inertia>
+                <ixx>0.0005</ixx>
+                <iyy>0.0005</iyy>
+                <izz>0.0005</izz>
+            </inertia>
+        </inertial>
+        <collision name="col">
+            <geometry>
+                <cylinder>
+                    <radius>0.05</radius>
+                    <length>3.532994594896641</length>
+                  </cylinder>
+            </geometry>
+        </collision>
+        <visual name="visual">
+            <geometry>
+                <cylinder>
+                    <radius>0.05</radius>
+                    <length>3.532994594896641</length>
+                </cylinder>
+            </geometry>
+          </visual>
+    </link>
+    
+    <link name="vertical_arm2_right">
+        <pose>1.4330127018922194 0.5386751345948125 3.5 0.5564452083809998 0.0 2.0943951023931953</pose>
+        <gravity>0</gravity>
+        <inertial>
+            <mass>0.1</mass>
+            <inertia>
+                <ixx>0.0005</ixx>
+                <iyy>0.0005</iyy>
+                <izz>0.0005</izz>
+            </inertia>
+        </inertial>
+        <collision name="col">
+            <geometry>
+                <cylinder>
+                    <radius>0.05</radius>
+                    <length>3.532994594896641</length>
+                  </cylinder>
+            </geometry>
+        </collision>
+        <visual name="visual">
+            <geometry>
+                <cylinder>
+                    <radius>0.05</radius>
+                    <length>3.532994594896641</length>
+                </cylinder>
+            </geometry>
+          </visual>
+    </link>
+    
+    <link name="vertical_arm3_right">
+        <pose>-1.1830127018922194 0.9716878364870318 3.5 0.5564452083809998 0.0 -2.0943951023931953</pose>
+        <gravity>0</gravity>
+        <inertial>
+            <mass>0.1</mass>
+            <inertia>
+                <ixx>0.0005</ixx>
+                <iyy>0.0005</iyy>
+                <izz>0.0005</izz>
+            </inertia>
+        </inertial>
+        <collision name="col">
+            <geometry>
+                <cylinder>
+                    <radius>0.05</radius>
+                    <length>3.532994594896641</length>
+                  </cylinder>
+            </geometry>
+        </collision>
+        <visual name="visual">
+            <geometry>
+                <cylinder>
+                    <radius>0.05</radius>
+                    <length>3.532994594896641</length>
+                </cylinder>
+            </geometry>
+          </visual>
+    </link>
+    
+    <link name="upper_triangle_holder">
+        <pose>0 0 5.5 0 0 0</pose>
+        <gravity>0</gravity>
+        <inertial>
+            <mass>0.1</mass>
+            <inertia>
+                <ixx>0.0005</ixx>
+                <iyy>0.0005</iyy>
+                <izz>0.0005</izz>
+            </inertia>
+        </inertial>
+        <collision name="col">
+            <geometry>
+                <cylinder>
+                    <radius>0.05</radius>
+                    <length>1</length>
+                  </cylinder>
+            </geometry>
+        </collision>
+        <visual name="visual">
+            <geometry>
+                <cylinder>
+                    <radius>0.05</radius>
+                    <length>1</length>
+                </cylinder>
+            </geometry>
+          </visual>
+    </link>
+    
+    <link name="lower_triangle_holder">
+        <pose>0 0 1.8 0 0 0</pose>
+        <gravity>0</gravity>
+        <inertial>
+            <mass>0.1</mass>
+            <inertia>
+                <ixx>0.0005</ixx>
+                <iyy>0.0005</iyy>
+                <izz>0.0005</izz>
+            </inertia>
+        </inertial>
+        <collision name="col">
+            <geometry>
+                <cylinder>
+                    <radius>0.05</radius>
+                    <length>0.4</length>
+                  </cylinder>
+            </geometry>
+        </collision>
+        <visual name="visual">
+            <geometry>
+                <cylinder>
+                    <radius>0.05</radius>
+                    <length>0.4</length>
+                </cylinder>
+            </geometry>
+          </visual>
+    </link>
+    
+    <link name="horizontal_holder">
+        <pose>0 2.8867513459481287 6 1.5707963267948966 0 0</pose>
+        <gravity>0</gravity>
+        <inertial>
+            <mass>0.1</mass>
+            <inertia>
+                <ixx>0.0005</ixx>
+                <iyy>0.0005</iyy>
+                <izz>0.0005</izz>
+            </inertia>
+        </inertial>
+        <collision name="col">
+            <geometry>
+                <cylinder>
+                    <radius>0.05</radius>
+                    <length>5.773502691896257</length>
+                  </cylinder>
+            </geometry>
+        </collision>
+        <visual name="visual">
+            <geometry>
+                <cylinder>
+                    <radius>0.05</radius>
+                    <length>5.773502691896257</length>
+                </cylinder>
+            </geometry>
+          </visual>
+    </link>
+    
+    <link name="wall">
+        <pose>0 5.773502691896257 0.25 0 0 0</pose>
+        <inertial>
+            <mass>500</mass>
+        </inertial>
+        <collision name="col">
+            <geometry>
+                <cylinder>
+                    <radius>1.4433756729740643</radius>
+                    <length>0.5</length>
+                  </cylinder>
+            </geometry>
+        </collision>
+        <visual name="visual">
+            <geometry>
+                <cylinder>
+                    <radius>1.4433756729740643</radius>
+                    <length>0.5</length>
+                </cylinder>
+            </geometry>
+          </visual>
+    </link>
+    
+    <link name="main_holder">
+        <pose>0 5.773502691896257 3.25 0 0 0</pose>
+        <gravity>0</gravity>
+        <inertial>
+            <mass>0.1</mass>
+            <inertia>
+                <ixx>0.0005</ixx>
+                <iyy>0.0005</iyy>
+                <izz>0.0005</izz>
+            </inertia>
+        </inertial>
+        <collision name="col">
+            <geometry>
+                <cylinder>
+                    <radius>0.05</radius>
+                    <length>5.5</length>
+                  </cylinder>
+            </geometry>
+        </collision>
+        <visual name="visual">
+            <geometry>
+                <cylinder>
+                    <radius>0.05</radius>
+                    <length>5.5</length>
+                </cylinder>
+            </geometry>
+          </visual>
+    </link>
+    <joint type="revolute" name="upper_s2_s1">
+                    <pose>0 0 2.5 0 0 0</pose>
+                    <child>upper_side2</child>
+                    <parent>upper_side1</parent>
+                        <axis>
+                            <dynamics>
+                                <friction>1.0</friction>
+                            </dynamics>
+                            <xyz>0 0 1</xyz>
+                            <limit>
+                                <upper>0</upper>
+                                <lower>0</lower>
+                            </limit>
+                        </axis>
+			    </joint>
+            <joint type="revolute" name="upper_s2_s3">
+                    <pose>0 0 -2.5 0 0 0</pose>
+                    <child>upper_side2</child>
+                    <parent>upper_side3</parent>
+                        <axis>
+                            <dynamics>
+                                <friction>1.0</friction>
+                            </dynamics>
+                            <xyz>0 0 1</xyz>
+                            <limit>
+                                <upper>0</upper>
+                                <lower>0</lower>
+                            </limit>
+                        </axis>
+			    </joint>
+            <joint type="revolute" name="upper_s3_s1">
+                    <pose>0 0 2.5 0 0 0</pose>
+                    <child>upper_side3</child>
+                    <parent>upper_side1</parent>
+                        <axis>
+                            <dynamics>
+                                <friction>1.0</friction>
+                            </dynamics>
+                            <xyz>0 0 1</xyz>
+                            <limit>
+                                <upper>0</upper>
+                                <lower>0</lower>
+                            </limit>
+                        </axis>
+			    </joint>
+            <joint type="revolute" name="upper_arm_a1_s1">
+                    <pose>0 0 -0.5 0 0 0</pose>
+                    <child>upper_arm1</child>
+                    <parent>upper_side1</parent>
+                        <axis>
+                            <dynamics>
+                                <friction>1.0</friction>
+                            </dynamics>
+                            <xyz>0 1 0</xyz>
+                            <limit>
+                                <upper>1.5707963267948966</upper>
+                                <lower>-1.5707963267948966</lower>
+                            </limit>
+                        </axis>
+			    </joint>
+            <joint type="revolute" name="upper_arm_a2_s2">
+                    <pose>0 0 -0.5 0 0 0</pose>
+                    <child>upper_arm2</child>
+                    <parent>upper_side2</parent>
+                        <axis>
+                            <dynamics>
+                                <friction>1.0</friction>
+                            </dynamics>
+                            <xyz>0 1 0</xyz>
+                            <limit>
+                                <upper>1.5707963267948966</upper>
+                                <lower>-1.5707963267948966</lower>
+                            </limit>
+                        </axis>
+			    </joint>
+            <joint type="revolute" name="upper_arm_a3_s3">
+                    <pose>0 0 -0.5 0 0 0</pose>
+                    <child>upper_arm3</child>
+                    <parent>upper_side3</parent>
+                        <axis>
+                            <dynamics>
+                                <friction>1.0</friction>
+                            </dynamics>
+                            <xyz>0 1 0</xyz>
+                            <limit>
+                                <upper>1.5707963267948966</upper>
+                                <lower>-1.5707963267948966</lower>
+                            </limit>
+                        </axis>
+			    </joint>
+            <joint type="revolute" name="upper_arm_hor_a1_s1">
+                    <pose>0 0 0.5 0 0 0</pose>
+                    <child>upper_arm1</child>
+                    <parent>hor_upper_arm1</parent>
+                        <axis>
+                            <dynamics>
+                                <friction>1.0</friction>
+                            </dynamics>
+                            <xyz>0 1 0</xyz>
+                            <limit>
+                                <upper>1.5707963267948966</upper>
+                                <lower>-1.5707963267948966</lower>
+                            </limit>
+                        </axis>
+			    </joint>
+            <joint type="revolute" name="upper_arm_hor_a2_s2">
+                    <pose>0 0 0.5 0 0 0</pose>
+                    <child>upper_arm2</child>
+                    <parent>hor_upper_arm2</parent>
+                        <axis>
+                            <dynamics>
+                                <friction>1.0</friction>
+                            </dynamics>
+                            <xyz>0 1 0</xyz>
+                            <limit>
+                                <upper>1.5707963267948966</upper>
+                                <lower>-1.5707963267948966</lower>
+                            </limit>
+                        </axis>
+			    </joint>
+            <joint type="revolute" name="upper_arm_hor_a3_s3">
+                    <pose>0 0 0.5 0 0 0</pose>
+                    <child>upper_arm3</child>
+                    <parent>hor_upper_arm3</parent>
+                        <axis>
+                            <dynamics>
+                                <friction>1.0</friction>
+                            </dynamics>
+                            <xyz>0 1 0</xyz>
+                            <limit>
+                                <upper>1.5707963267948966</upper>
+                                <lower>-1.5707963267948966</lower>
+                            </limit>
+                        </axis>
+			    </joint>
+            <joint type="ball" name="vertical_arm_a1_v1_right">
+                    <pose>0 0 1.7664972974483204 0 0 0</pose>
+                    <child>vertical_arm1_right</child>
+                    <parent>hor_upper_arm1</parent>
+                        <axis>
+                            <dynamics>
+                                <friction>1.0</friction>
+                            </dynamics>
+                            <xyz>0 1 0</xyz>
+                            <limit>
+                                <upper>1.5707963267948966</upper>
+                                <lower>-1.5707963267948966</lower>
+                            </limit>
+                        </axis>
+			    </joint>
+            <joint type="ball" name="vertical_arm_a2_v2_right">
+                    <pose>0 0 1.7664972974483204 0 0 0</pose>
+                    <child>vertical_arm2_right</child>
+                    <parent>hor_upper_arm2</parent>
+                        <axis>
+                            <dynamics>
+                                <friction>1.0</friction>
+                            </dynamics>
+                            <xyz>0 1 0</xyz>
+                            <limit>
+                                <upper>1.5707963267948966</upper>
+                                <lower>-1.5707963267948966</lower>
+                            </limit>
+                        </axis>
+			    </joint>
+            <joint type="ball" name="vertical_arm_a3_v3_right">
+                    <pose>0 0 1.7664972974483204 0 0 0</pose>
+                    <child>vertical_arm3_right</child>
+                    <parent>hor_upper_arm3</parent>
+                        <axis>
+                            <dynamics>
+                                <friction>1.0</friction>
+                            </dynamics>
+                            <xyz>0 1 0</xyz>
+                            <limit>
+                                <upper>1.5707963267948966</upper>
+                                <lower>-1.5707963267948966</lower>
+                            </limit>
+                        </axis>
+			    </joint>
+            <joint type="ball" name="vertical_arm_a1_v1_left">
+                    <pose>0 0 1.7664972974483204 0 0 0</pose>
+                    <child>vertical_arm1_left</child>
+                    <parent>hor_upper_arm1</parent>
+                        <axis>
+                            <dynamics>
+                                <friction>1.0</friction>
+                            </dynamics>
+                            <xyz>0 1 0</xyz>
+                            <limit>
+                                <upper>1.5707963267948966</upper>
+                                <lower>-1.5707963267948966</lower>
+                            </limit>
+                        </axis>
+			    </joint>
+            <joint type="ball" name="vertical_arm_a2_v2_left">
+                    <pose>0 0 1.7664972974483204 0 0 0</pose>
+                    <child>vertical_arm2_left</child>
+                    <parent>hor_upper_arm2</parent>
+                        <axis>
+                            <dynamics>
+                                <friction>1.0</friction>
+                            </dynamics>
+                            <xyz>0 1 0</xyz>
+                            <limit>
+                                <upper>1.5707963267948966</upper>
+                                <lower>-1.5707963267948966</lower>
+                            </limit>
+                        </axis>
+			    </joint>
+            <joint type="ball" name="vertical_arm_a3_v3_left">
+                    <pose>0 0 1.7664972974483204 0 0 0</pose>
+                    <child>vertical_arm3_left</child>
+                    <parent>hor_upper_arm3</parent>
+                        <axis>
+                            <dynamics>
+                                <friction>1.0</friction>
+                            </dynamics>
+                            <xyz>0 1 0</xyz>
+                            <limit>
+                                <upper>1.5707963267948966</upper>
+                                <lower>-1.5707963267948966</lower>
+                            </limit>
+                        </axis>
+			    </joint>
+            <joint type="ball" name="lvertical_arm_a1_v1_right">
+                    <pose>0 0 -1.7664972974483204 0 0 0</pose>
+                    <child>vertical_arm1_right</child>
+                    <parent>lower_side1</parent>
+                        <axis>
+                            <dynamics>
+                                <friction>1.0</friction>
+                            </dynamics>
+                            <xyz>1 1 0</xyz>
+                            <limit>
+                                <upper>1.5707963267948966</upper>
+                                <lower>-1.5707963267948966</lower>
+                            </limit>
+                        </axis>
+			    </joint>
+            <joint type="ball" name="lvertical_arm_a2_v2_right">
+                    <pose>0 0 -1.7664972974483204 0 0 0</pose>
+                    <child>vertical_arm2_right</child>
+                    <parent>lower_side2</parent>
+                        <axis>
+                            <dynamics>
+                                <friction>1.0</friction>
+                            </dynamics>
+                            <xyz>1 1 0</xyz>
+                            <limit>
+                                <upper>1.5707963267948966</upper>
+                                <lower>-1.5707963267948966</lower>
+                            </limit>
+                        </axis>
+			    </joint>
+            <joint type="ball" name="lvertical_arm_a3_v3_right">
+                    <pose>0 0 -1.7664972974483204 0 0 0</pose>
+                    <child>vertical_arm3_right</child>
+                    <parent>lower_side3</parent>
+                        <axis>
+                            <dynamics>
+                                <friction>1.0</friction>
+                            </dynamics>
+                            <xyz>1 1 0</xyz>
+                            <limit>
+                                <upper>1.5707963267948966</upper>
+                                <lower>-1.5707963267948966</lower>
+                            </limit>
+                        </axis>
+			    </joint>
+            <joint type="ball" name="lvertical_arm_a1_v1_left">
+                    <pose>0 0 -1.7664972974483204 0 0 0</pose>
+                    <child>vertical_arm1_left</child>
+                    <parent>lower_side1</parent>
+                        <axis>
+                            <dynamics>
+                                <friction>1.0</friction>
+                            </dynamics>
+                            <xyz>1 1 0</xyz>
+                            <limit>
+                                <upper>1.5707963267948966</upper>
+                                <lower>-1.5707963267948966</lower>
+                            </limit>
+                        </axis>
+			    </joint>
+            <joint type="ball" name="lvertical_arm_a2_v2_left">
+                    <pose>0 0 -1.7664972974483204 0 0 0</pose>
+                    <child>vertical_arm2_left</child>
+                    <parent>lower_side2</parent>
+                        <axis>
+                            <dynamics>
+                                <friction>1.0</friction>
+                            </dynamics>
+                            <xyz>1 1 0</xyz>
+                            <limit>
+                                <upper>1.5707963267948966</upper>
+                                <lower>-1.5707963267948966</lower>
+                            </limit>
+                        </axis>
+			    </joint>
+            <joint type="ball" name="lvertical_arm_a3_v3_left">
+                    <pose>0 0 -1.7664972974483204 0 0 0</pose>
+                    <child>vertical_arm3_left</child>
+                    <parent>lower_side3</parent>
+                        <axis>
+                            <dynamics>
+                                <friction>1.0</friction>
+                            </dynamics>
+                            <xyz>1 1 0</xyz>
+                            <limit>
+                                <upper>1.5707963267948966</upper>
+                                <lower>-1.5707963267948966</lower>
+                            </limit>
+                        </axis>
+			    </joint>
+            <joint type="revolute" name="upper_rib1_s1">
+                    <pose>0 0 1.4433756729740643 0 0 0</pose>
+                    <child>upper_rib1</child>
+                    <parent>upper_side1</parent>
+                        <axis>
+                            <dynamics>
+                                <friction>1.0</friction>
+                            </dynamics>
+                            <xyz>1 0 0</xyz>
+                            <limit>
+                                <upper>0</upper>
+                                <lower>0</lower>
+                            </limit>
+                        </axis>
+			    </joint>
+            <joint type="revolute" name="upper_rib2_s2">
+                    <pose>0 0 -1.4433756729740643 0 0 0</pose>
+                    <child>upper_rib2</child>
+                    <parent>upper_side2</parent>
+                        <axis>
+                            <dynamics>
+                                <friction>1.0</friction>
+                            </dynamics>
+                            <xyz>1 0 0</xyz>
+                            <limit>
+                                <upper>0</upper>
+                                <lower>0</lower>
+                            </limit>
+                        </axis>
+			    </joint>
+            <joint type="revolute" name="upper_rib3_s3">
+                    <pose>0 0 1.4433756729740643 0 0 0</pose>
+                    <child>upper_rib3</child>
+                    <parent>upper_side3</parent>
+                        <axis>
+                            <dynamics>
+                                <friction>1.0</friction>
+                            </dynamics>
+                            <xyz>1 0 0</xyz>
+                            <limit>
+                                <upper>0</upper>
+                                <lower>0</lower>
+                            </limit>
+                        </axis>
+			    </joint>
+            <joint type="revolute" name="upper_rib1_holder">
+                    <pose>0 0 -1.4433756729740643 0 0 0</pose>
+                    <child>upper_rib1</child>
+                    <parent>upper_triangle_holder</parent>
+                        <axis>
+                            <dynamics>
+                                <friction>1.0</friction>
+                            </dynamics>
+                            <xyz>1 0 0</xyz>
+                            <limit>
+                                <upper>0</upper>
+                                <lower>0</lower>
+                            </limit>
+                        </axis>
+			    </joint>
+            <joint type="revolute" name="upper_rib2_holder">
+                    <pose>0 0 1.4433756729740643 0 0 0</pose>
+                    <child>upper_rib2</child>
+                    <parent>upper_triangle_holder</parent>
+                        <axis>
+                            <dynamics>
+                                <friction>1.0</friction>
+                            </dynamics>
+                            <xyz>1 0 0</xyz>
+                            <limit>
+                                <upper>0</upper>
+                                <lower>0</lower>
+                            </limit>
+                        </axis>
+			    </joint>
+            <joint type="revolute" name="upper_rib3_holder">
+                    <pose>0 0 -1.4433756729740643 0 0 0</pose>
+                    <child>upper_rib3</child>
+                    <parent>upper_triangle_holder</parent>
+                        <axis>
+                            <dynamics>
+                                <friction>1.0</friction>
+                            </dynamics>
+                            <xyz>1 0 0</xyz>
+                            <limit>
+                                <upper>0</upper>
+                                <lower>0</lower>
+                            </limit>
+                        </axis>
+			    </joint>
+            <joint type="revolute" name="lower_rib1_s1">
+                    <pose>0 0 0 0 0 0</pose>
+                    <child>lower_side1</child>
+                    <parent>lower_rib1</parent>
+                        <axis>
+                            <dynamics>
+                                <friction>1.0</friction>
+                            </dynamics>
+                            <xyz>0 1 0</xyz>
+                            <limit>
+                                <upper>0</upper>
+                                <lower>0</lower>
+                            </limit>
+                        </axis>
+			    </joint>
+            <joint type="revolute" name="lower_rib2_s2">
+                    <pose>0 0 0 0 0 0</pose>
+                    <child>lower_side2</child>
+                    <parent>lower_rib2</parent>
+                        <axis>
+                            <dynamics>
+                                <friction>1.0</friction>
+                            </dynamics>
+                            <xyz>0 1 0</xyz>
+                            <limit>
+                                <upper>0</upper>
+                                <lower>0</lower>
+                            </limit>
+                        </axis>
+			    </joint>
+            <joint type="revolute" name="lower_rib3_s3">
+                    <pose>0 0 0 0 0 0</pose>
+                    <child>lower_side3</child>
+                    <parent>lower_rib3</parent>
+                        <axis>
+                            <dynamics>
+                                <friction>1.0</friction>
+                            </dynamics>
+                            <xyz>0 1 0</xyz>
+                            <limit>
+                                <upper>0</upper>
+                                <lower>0</lower>
+                            </limit>
+                        </axis>
+			    </joint>
+            <joint type="revolute" name="lower_rib1_holder">
+                    <pose>0 0 -0.28867513459481287 0 0 0</pose>
+                    <child>lower_rib1</child>
+                    <parent>lower_triangle_holder</parent>
+                        <axis>
+                            <dynamics>
+                                <friction>1.0</friction>
+                            </dynamics>
+                            <xyz>1 0 0</xyz>
+                            <limit>
+                                <upper>0</upper>
+                                <lower>0</lower>
+                            </limit>
+                        </axis>
+			    </joint>
+            <joint type="revolute" name="lower_rib2_holder">
+                    <pose>0 0 -0.28867513459481287 0 0 0</pose>
+                    <child>lower_rib2</child>
+                    <parent>lower_triangle_holder</parent>
+                        <axis>
+                            <dynamics>
+                                <friction>1.0</friction>
+                            </dynamics>
+                            <xyz>1 0 0</xyz>
+                            <limit>
+                                <upper>0</upper>
+                                <lower>0</lower>
+                            </limit>
+                        </axis>
+			    </joint>
+            <joint type="revolute" name="lower_rib3_holder">
+                    <pose>0 0 -0.28867513459481287 0 0 0</pose>
+                    <child>lower_rib3</child>
+                    <parent>lower_triangle_holder</parent>
+                        <axis>
+                            <dynamics>
+                                <friction>1.0</friction>
+                            </dynamics>
+                            <xyz>1 0 0</xyz>
+                            <limit>
+                                <upper>0</upper>
+                                <lower>0</lower>
+                            </limit>
+                        </axis>
+			    </joint>
+            <joint type="revolute" name="lower_rib12">
+                    <pose>0 0 -0.28867513459481287 0 0 0</pose>
+                    <child>lower_rib1</child>
+                    <parent>lower_rib1</parent>
+                        <axis>
+                            <dynamics>
+                                <friction>1.0</friction>
+                            </dynamics>
+                            <xyz>1 0 0</xyz>
+                            <limit>
+                                <upper>0</upper>
+                                <lower>0</lower>
+                            </limit>
+                        </axis>
+			    </joint>
+            <joint type="revolute" name="lower_rib32">
+                    <pose>0 0 -0.28867513459481287 0 0 0</pose>
+                    <child>lower_rib2</child>
+                    <parent>lower_rib3</parent>
+                        <axis>
+                            <dynamics>
+                                <friction>1.0</friction>
+                            </dynamics>
+                            <xyz>1 0 0</xyz>
+                            <limit>
+                                <upper>0</upper>
+                                <lower>0</lower>
+                            </limit>
+                        </axis>
+			    </joint>
+            <joint type="revolute" name="lower_rib13">
+                    <pose>0 0 -0.28867513459481287 0 0 0</pose>
+                    <child>lower_rib3</child>
+                    <parent>lower_rib1</parent>
+                        <axis>
+                            <dynamics>
+                                <friction>1.0</friction>
+                            </dynamics>
+                            <xyz>1 0 0</xyz>
+                            <limit>
+                                <upper>0</upper>
+                                <lower>0</lower>
+                            </limit>
+                        </axis>
+			    </joint>
+            <joint type="revolute" name="u_tria_v_h_holder">
+                    <pose>0 0 0.5 0 0 0</pose>
+                    <child>upper_triangle_holder</child>
+                    <parent>horizontal_holder</parent>
+                        <axis>
+                            <dynamics>
+                                <friction>1.0</friction>
+                            </dynamics>
+                            <xyz>1 0 0</xyz>
+                            <limit>
+                                <upper>0</upper>
+                                <lower>0</lower>
+                            </limit>
+                        </axis>
+			    </joint>
+            <joint type="revolute" name="h_v_holder">
+                    <pose>0 0 -2.8867513459481287 0 0 0</pose>
+                    <child>horizontal_holder</child>
+                    <parent>main_holder</parent>
+                        <axis>
+                            <dynamics>
+                                <friction>1.0</friction>
+                            </dynamics>
+                            <xyz>1 0 0</xyz>
+                            <limit>
+                                <upper>0</upper>
+                                <lower>0</lower>
+                            </limit>
+                        </axis>
+			    </joint>
+            <joint type="revolute" name="v_wall_holder">
+                    <pose>0 0 -2.75 0 0 0</pose>
+                    <child>main_holder</child>
+                    <parent>wall</parent>
+                        <axis>
+                            <dynamics>
+                                <friction>1.0</friction>
+                            </dynamics>
+                            <xyz>1 0 0</xyz>
+                            <limit>
+                                <upper>0</upper>
+                                <lower>0</lower>
+                            </limit>
+                        </axis>
+			    </joint>
+            
+        <plugin name="arm_control" filename="libdelta3_gazebo.so" />
+        
+</model>
+</sdf>
+    

@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(delta3_gazebo)
+project(delta3_lib)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
 # add_compile_options(-std=c++11)
@@ -11,24 +11,12 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   rospy
   std_msgs
-  gazebo_ros
-  delta3_lib
+  message_generation
 )
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
 
-find_package(gazebo REQUIRED)
-
-link_directories(${GAZEBO_LIBRARY_DIRS})
-include_directories(${Boost_INCLUDE_DIR} 
-              ${catkin_INCLUDE_DIRS} 
-              ${GAZEBO_INCLUDE_DIRS} 
-              ${roscpp_INCLUDE_DIRS}
-              ${std_msgs_INCLUDE_DIRS})
-
-add_library(${PROJECT_NAME} SHARED plugins/controller.cpp)
-target_link_libraries(${PROJECT_NAME} ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES} ${roscpp_LIBRARIES})
 
 ## Uncomment this if the package has a setup.py. This macro ensures
 ## modules and global scripts declared therein get installed
@@ -60,10 +48,10 @@ target_link_libraries(${PROJECT_NAME} ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES} ${
 ##   * add every package in MSG_DEP_SET to generate_messages(DEPENDENCIES ...)
 
 ## Generate messages in the 'msg' folder
-# add_message_files(
-#   FILES
-#   Angles.msg
-# )
+add_message_files(
+  FILES
+  Angles.msg
+)
 
 ## Generate services in the 'srv' folder
 # add_service_files(
@@ -80,10 +68,10 @@ target_link_libraries(${PROJECT_NAME} ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES} ${
 # )
 
 ## Generate added messages and services with any dependencies listed here
-# generate_messages(
-#   DEPENDENCIES
-#   std_msgs
-# )
+generate_messages(
+  DEPENDENCIES
+  std_msgs
+)
 
 ################################################
 ## Declare ROS dynamic reconfigure parameters ##
@@ -116,10 +104,9 @@ target_link_libraries(${PROJECT_NAME} ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES} ${
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
 #  INCLUDE_DIRS include
-#  LIBRARIES delta3_gazebo
-#  CATKIN_DEPENDS roscpp rospy std_msgs
+#  LIBRARIES delta3_lib
+    CATKIN_DEPENDS roscpp rospy std_msgs message_runtime
 #  DEPENDS system_lib
-DEPENDS roscpp gazebo_ros delta3_lib
 )
 
 ###########
@@ -128,14 +115,14 @@ DEPENDS roscpp gazebo_ros delta3_lib
 
 ## Specify additional locations of header files
 ## Your package locations should be listed before other locations
-# include_directories(
-# # include
-#   ${catkin_INCLUDE_DIRS}
-# )
+include_directories(
+# include
+  ${catkin_INCLUDE_DIRS}
+)
 
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}
-#   src/${PROJECT_NAME}/delta3_gazebo.cpp
+#   src/${PROJECT_NAME}/delta3_lib.cpp
 # )
 
 ## Add cmake target dependencies of the library
@@ -146,7 +133,7 @@ DEPENDS roscpp gazebo_ros delta3_lib
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
-# add_executable(${PROJECT_NAME}_node src/delta3_gazebo_node.cpp)
+# add_executable(${PROJECT_NAME}_node src/delta3_lib_node.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -203,7 +190,7 @@ DEPENDS roscpp gazebo_ros delta3_lib
 #############
 
 ## Add gtest based cpp test target and link libraries
-# catkin_add_gtest(${PROJECT_NAME}-test test/test_delta3_gazebo.cpp)
+# catkin_add_gtest(${PROJECT_NAME}-test test/test_delta3_lib.cpp)
 # if(TARGET ${PROJECT_NAME}-test)
 #   target_link_libraries(${PROJECT_NAME}-test ${PROJECT_NAME})
 # endif()
