@@ -181,7 +181,7 @@
         <pose>0.0 -1.9433756729740643 5.0 1.5707963267948966 1.5707963267948966 0.0</pose>
         <gravity>0</gravity>
         <inertial>
-            <mass>0.1</mass>
+            <mass>0.01</mass>
             <inertia>
                 <ixx>0.0005</ixx>
                 <iyy>0.0005</iyy>
@@ -210,7 +210,7 @@
         <pose>1.6830127018922194 0.9716878364870317 5.0 1.5707963267948966 1.5707963267948966 2.0943951023931953</pose>
         <gravity>0</gravity>
         <inertial>
-            <mass>0.1</mass>
+            <mass>0.01</mass>
             <inertia>
                 <ixx>0.0005</ixx>
                 <iyy>0.0005</iyy>
@@ -239,7 +239,7 @@
         <pose>-1.6830127018922194 0.9716878364870317 5.0 1.5707963267948966 1.5707963267948966 -2.0943951023931953</pose>
         <gravity>0</gravity>
         <inertial>
-            <mass>0.1</mass>
+            <mass>0.01</mass>
             <inertia>
                 <ixx>0.0005</ixx>
                 <iyy>0.0005</iyy>
@@ -268,7 +268,7 @@
         <pose>0.0 -2.4433756729740645 5.0 0.0 1.5707963267948966 0.0</pose>
         <gravity>0</gravity>
         <inertial>
-            <mass>0.1</mass>
+            <mass>0.01</mass>
             <inertia>
                 <ixx>0.0005</ixx>
                 <iyy>0.0005</iyy>
@@ -297,7 +297,7 @@
         <pose>2.116025403784439 1.2216878364870316 5.0 0.0 1.5707963267948966 2.0943951023931953</pose>
         <gravity>0</gravity>
         <inertial>
-            <mass>0.1</mass>
+            <mass>0.01</mass>
             <inertia>
                 <ixx>0.0005</ixx>
                 <iyy>0.0005</iyy>
@@ -326,7 +326,7 @@
         <pose>-2.116025403784439 1.2216878364870316 5.0 0.0 1.5707963267948966 -2.0943951023931953</pose>
         <gravity>0</gravity>
         <inertial>
-            <mass>0.1</mass>
+            <mass>0.01</mass>
             <inertia>
                 <ixx>0.0005</ixx>
                 <iyy>0.0005</iyy>
@@ -355,7 +355,7 @@
         <pose>0.0 -0.5773502691896257 2.0 0.0 1.5707963267948966 0.0</pose>
         <gravity>0</gravity>
         <inertial>
-            <mass>0.1</mass>
+            <mass>0.01</mass>
             <inertia>
                 <ixx>0.0005</ixx>
                 <iyy>0.0005</iyy>
@@ -384,7 +384,7 @@
         <pose>0.5 0.28867513459481275 2.0 0.0 1.5707963267948966 2.0943951023931953</pose>
         <gravity>0</gravity>
         <inertial>
-            <mass>0.1</mass>
+            <mass>0.01</mass>
             <inertia>
                 <ixx>0.0005</ixx>
                 <iyy>0.0005</iyy>
@@ -413,7 +413,7 @@
         <pose>-0.5 0.28867513459481275 2.0 0.0 1.5707963267948966 -2.0943951023931953</pose>
         <gravity>0</gravity>
         <inertial>
-            <mass>0.1</mass>
+            <mass>0.01</mass>
             <inertia>
                 <ixx>0.0005</ixx>
                 <iyy>0.0005</iyy>
@@ -442,7 +442,7 @@
         <pose>0.0 -0.28867513459481287 2.0 1.5707963267948966 1.5707963267948966 0.0</pose>
         <gravity>0</gravity>
         <inertial>
-            <mass>0.1</mass>
+            <mass>0.01</mass>
             <inertia>
                 <ixx>0.0005</ixx>
                 <iyy>0.0005</iyy>
@@ -471,7 +471,7 @@
         <pose>0.25 0.14433756729740638 2.0 1.5707963267948966 1.5707963267948966 2.0943951023931953</pose>
         <gravity>0</gravity>
         <inertial>
-            <mass>0.1</mass>
+            <mass>0.01</mass>
             <inertia>
                 <ixx>0.0005</ixx>
                 <iyy>0.0005</iyy>
@@ -500,7 +500,7 @@
         <pose>-0.25 0.14433756729740638 2.0 1.5707963267948966 1.5707963267948966 -2.0943951023931953</pose>
         <gravity>0</gravity>
         <inertial>
-            <mass>0.1</mass>
+            <mass>0.01</mass>
             <inertia>
                 <ixx>0.0005</ixx>
                 <iyy>0.0005</iyy>
@@ -529,7 +529,7 @@
         <pose>0.25 -1.5103629710818451 3.5 0.556445208381 0.0 0.0</pose>
         <gravity>0</gravity>
         <inertial>
-            <mass>0.1</mass>
+            <mass>0.01</mass>
             <inertia>
                 <ixx>0.0005</ixx>
                 <iyy>0.0005</iyy>
@@ -558,7 +558,7 @@
         <pose>1.1830127018922194 0.9716878364870319 3.5 0.5564452083809998 0.0 2.0943951023931953</pose>
         <gravity>0</gravity>
         <inertial>
-            <mass>0.1</mass>
+            <mass>0.01</mass>
             <inertia>
                 <ixx>0.0005</ixx>
                 <iyy>0.0005</iyy>
@@ -587,7 +587,7 @@
         <pose>-1.4330127018922194 0.5386751345948126 3.5 0.5564452083809998 0.0 -2.0943951023931953</pose>
         <gravity>0</gravity>
         <inertial>
-            <mass>0.1</mass>
+            <mass>0.01</mass>
             <inertia>
                 <ixx>0.0005</ixx>
                 <iyy>0.0005</iyy>
@@ -616,7 +616,7 @@
         <pose>-0.25 -1.5103629710818451 3.5 0.556445208381 0.0 0.0</pose>
         <gravity>0</gravity>
         <inertial>
-            <mass>0.1</mass>
+            <mass>0.01</mass>
             <inertia>
                 <ixx>0.0005</ixx>
                 <iyy>0.0005</iyy>
@@ -645,7 +645,7 @@
         <pose>1.4330127018922194 0.5386751345948125 3.5 0.5564452083809998 0.0 2.0943951023931953</pose>
         <gravity>0</gravity>
         <inertial>
-            <mass>0.1</mass>
+            <mass>0.01</mass>
             <inertia>
                 <ixx>0.0005</ixx>
                 <iyy>0.0005</iyy>
@@ -674,7 +674,7 @@
         <pose>-1.1830127018922194 0.9716878364870318 3.5 0.5564452083809998 0.0 -2.0943951023931953</pose>
         <gravity>0</gravity>
         <inertial>
-            <mass>0.1</mass>
+            <mass>0.01</mass>
             <inertia>
                 <ixx>0.0005</ixx>
                 <iyy>0.0005</iyy>
@@ -729,10 +729,10 @@
     </link>
     
     <link name="lower_triangle_holder">
-        <pose>0 0 1.8 0 0 0</pose>
+        <pose>0 0 1.9 0 0 0</pose>
         <gravity>0</gravity>
         <inertial>
-            <mass>0.1</mass>
+            <mass>0.01</mass>
             <inertia>
                 <ixx>0.0005</ixx>
                 <iyy>0.0005</iyy>
@@ -743,7 +743,7 @@
             <geometry>
                 <cylinder>
                     <radius>0.05</radius>
-                    <length>0.4</length>
+                    <length>0.2</length>
                   </cylinder>
             </geometry>
         </collision>
@@ -751,7 +751,7 @@
             <geometry>
                 <cylinder>
                     <radius>0.05</radius>
-                    <length>0.4</length>
+                    <length>0.2</length>
                 </cylinder>
             </geometry>
           </visual>
@@ -837,6 +837,51 @@
             </geometry>
           </visual>
     </link>
+    
+    <link name="camera_link">
+            <pose>0 0 1.7499999999999998 0 1.5707963267948966 0</pose>
+            <visual name="visual">
+                <geometry>
+                    <cylinder>
+                        <radius>0.05</radius>
+                        <length>0.1</length>
+                    </cylinder>
+                </geometry>
+            </visual>
+            <collision name="col">
+                <geometry>
+                    <cylinder>
+                        <radius>0.05</radius>
+                        <length>0.1</length>
+                    </cylinder>
+                </geometry>
+            </collision>
+            <sensor type="camera" name="camera1">
+                <update_rate>30.0</update_rate>
+                <camera name="head">
+                    <horizontal_fov>1.3962634</horizontal_fov>
+                    <image>
+                        <width>800</width>
+                        <height>800</height>
+                        <format>R8G8B8</format>
+                    </image>
+                    <clip>
+                        <near>0.02</near>
+                        <far>10</far>
+                    </clip>
+                </camera>
+                <always_on>1</always_on>
+                <visualize>1</visualize>
+                <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
+                    <alwaysOn>true</alwaysOn>
+                    <updateRate>0.0</updateRate>
+                    <cameraName>delta3/camera</cameraName>
+                    <imageTopicName>raw_image</imageTopicName>
+                    <cameraInfoTopicName>camera_info</cameraInfoTopicName>
+                    <frameName>camera_link</frameName>
+                </plugin>
+            </sensor>
+        </link>
     <joint type="revolute" name="upper_s2_s1">
                     <pose>0 0 2.5 0 0 0</pose>
                     <child>upper_side2</child>
@@ -844,6 +889,7 @@
                         <axis>
                             <dynamics>
                                 <friction>1.0</friction>
+                                <damping>.1</damping>
                             </dynamics>
                             <xyz>0 0 1</xyz>
                             <limit>
@@ -859,6 +905,7 @@
                         <axis>
                             <dynamics>
                                 <friction>1.0</friction>
+                                <damping>.1</damping>
                             </dynamics>
                             <xyz>0 0 1</xyz>
                             <limit>
@@ -874,6 +921,7 @@
                         <axis>
                             <dynamics>
                                 <friction>1.0</friction>
+                                <damping>.1</damping>
                             </dynamics>
                             <xyz>0 0 1</xyz>
                             <limit>
@@ -889,6 +937,7 @@
                         <axis>
                             <dynamics>
                                 <friction>1.0</friction>
+                                <damping>.1</damping>
                             </dynamics>
                             <xyz>0 1 0</xyz>
                             <limit>
@@ -904,6 +953,7 @@
                         <axis>
                             <dynamics>
                                 <friction>1.0</friction>
+                                <damping>.1</damping>
                             </dynamics>
                             <xyz>0 1 0</xyz>
                             <limit>
@@ -919,6 +969,7 @@
                         <axis>
                             <dynamics>
                                 <friction>1.0</friction>
+                                <damping>.1</damping>
                             </dynamics>
                             <xyz>0 1 0</xyz>
                             <limit>
@@ -934,6 +985,7 @@
                         <axis>
                             <dynamics>
                                 <friction>1.0</friction>
+                                <damping>.1</damping>
                             </dynamics>
                             <xyz>0 1 0</xyz>
                             <limit>
@@ -949,6 +1001,7 @@
                         <axis>
                             <dynamics>
                                 <friction>1.0</friction>
+                                <damping>.1</damping>
                             </dynamics>
                             <xyz>0 1 0</xyz>
                             <limit>
@@ -964,6 +1017,7 @@
                         <axis>
                             <dynamics>
                                 <friction>1.0</friction>
+                                <damping>.1</damping>
                             </dynamics>
                             <xyz>0 1 0</xyz>
                             <limit>
@@ -979,6 +1033,7 @@
                         <axis>
                             <dynamics>
                                 <friction>1.0</friction>
+                                <damping>.1</damping>
                             </dynamics>
                             <xyz>0 1 0</xyz>
                             <limit>
@@ -994,6 +1049,7 @@
                         <axis>
                             <dynamics>
                                 <friction>1.0</friction>
+                                <damping>.1</damping>
                             </dynamics>
                             <xyz>0 1 0</xyz>
                             <limit>
@@ -1009,6 +1065,7 @@
                         <axis>
                             <dynamics>
                                 <friction>1.0</friction>
+                                <damping>.1</damping>
                             </dynamics>
                             <xyz>0 1 0</xyz>
                             <limit>
@@ -1024,6 +1081,7 @@
                         <axis>
                             <dynamics>
                                 <friction>1.0</friction>
+                                <damping>.1</damping>
                             </dynamics>
                             <xyz>0 1 0</xyz>
                             <limit>
@@ -1039,6 +1097,7 @@
                         <axis>
                             <dynamics>
                                 <friction>1.0</friction>
+                                <damping>.1</damping>
                             </dynamics>
                             <xyz>0 1 0</xyz>
                             <limit>
@@ -1054,6 +1113,7 @@
                         <axis>
                             <dynamics>
                                 <friction>1.0</friction>
+                                <damping>.1</damping>
                             </dynamics>
                             <xyz>0 1 0</xyz>
                             <limit>
@@ -1069,8 +1129,9 @@
                         <axis>
                             <dynamics>
                                 <friction>1.0</friction>
+                                <damping>.1</damping>
                             </dynamics>
-                            <xyz>1 1 0</xyz>
+                            <xyz>0 1 0</xyz>
                             <limit>
                                 <upper>1.5707963267948966</upper>
                                 <lower>-1.5707963267948966</lower>
@@ -1084,8 +1145,9 @@
                         <axis>
                             <dynamics>
                                 <friction>1.0</friction>
+                                <damping>.1</damping>
                             </dynamics>
-                            <xyz>1 1 0</xyz>
+                            <xyz>0 1 0</xyz>
                             <limit>
                                 <upper>1.5707963267948966</upper>
                                 <lower>-1.5707963267948966</lower>
@@ -1099,8 +1161,9 @@
                         <axis>
                             <dynamics>
                                 <friction>1.0</friction>
+                                <damping>.1</damping>
                             </dynamics>
-                            <xyz>1 1 0</xyz>
+                            <xyz>0 1 0</xyz>
                             <limit>
                                 <upper>1.5707963267948966</upper>
                                 <lower>-1.5707963267948966</lower>
@@ -1114,8 +1177,9 @@
                         <axis>
                             <dynamics>
                                 <friction>1.0</friction>
+                                <damping>.1</damping>
                             </dynamics>
-                            <xyz>1 1 0</xyz>
+                            <xyz>0 1 0</xyz>
                             <limit>
                                 <upper>1.5707963267948966</upper>
                                 <lower>-1.5707963267948966</lower>
@@ -1129,8 +1193,9 @@
                         <axis>
                             <dynamics>
                                 <friction>1.0</friction>
+                                <damping>.1</damping>
                             </dynamics>
-                            <xyz>1 1 0</xyz>
+                            <xyz>0 1 0</xyz>
                             <limit>
                                 <upper>1.5707963267948966</upper>
                                 <lower>-1.5707963267948966</lower>
@@ -1144,8 +1209,9 @@
                         <axis>
                             <dynamics>
                                 <friction>1.0</friction>
+                                <damping>.1</damping>
                             </dynamics>
-                            <xyz>1 1 0</xyz>
+                            <xyz>0 1 0</xyz>
                             <limit>
                                 <upper>1.5707963267948966</upper>
                                 <lower>-1.5707963267948966</lower>
@@ -1159,6 +1225,7 @@
                         <axis>
                             <dynamics>
                                 <friction>1.0</friction>
+                                <damping>.1</damping>
                             </dynamics>
                             <xyz>1 0 0</xyz>
                             <limit>
@@ -1174,6 +1241,7 @@
                         <axis>
                             <dynamics>
                                 <friction>1.0</friction>
+                                <damping>.1</damping>
                             </dynamics>
                             <xyz>1 0 0</xyz>
                             <limit>
@@ -1189,6 +1257,7 @@
                         <axis>
                             <dynamics>
                                 <friction>1.0</friction>
+                                <damping>.1</damping>
                             </dynamics>
                             <xyz>1 0 0</xyz>
                             <limit>
@@ -1204,6 +1273,7 @@
                         <axis>
                             <dynamics>
                                 <friction>1.0</friction>
+                                <damping>.1</damping>
                             </dynamics>
                             <xyz>1 0 0</xyz>
                             <limit>
@@ -1219,6 +1289,7 @@
                         <axis>
                             <dynamics>
                                 <friction>1.0</friction>
+                                <damping>.1</damping>
                             </dynamics>
                             <xyz>1 0 0</xyz>
                             <limit>
@@ -1234,6 +1305,7 @@
                         <axis>
                             <dynamics>
                                 <friction>1.0</friction>
+                                <damping>.1</damping>
                             </dynamics>
                             <xyz>1 0 0</xyz>
                             <limit>
@@ -1249,6 +1321,7 @@
                         <axis>
                             <dynamics>
                                 <friction>1.0</friction>
+                                <damping>.1</damping>
                             </dynamics>
                             <xyz>0 1 0</xyz>
                             <limit>
@@ -1264,6 +1337,7 @@
                         <axis>
                             <dynamics>
                                 <friction>1.0</friction>
+                                <damping>.1</damping>
                             </dynamics>
                             <xyz>0 1 0</xyz>
                             <limit>
@@ -1279,6 +1353,7 @@
                         <axis>
                             <dynamics>
                                 <friction>1.0</friction>
+                                <damping>.1</damping>
                             </dynamics>
                             <xyz>0 1 0</xyz>
                             <limit>
@@ -1294,6 +1369,7 @@
                         <axis>
                             <dynamics>
                                 <friction>1.0</friction>
+                                <damping>.1</damping>
                             </dynamics>
                             <xyz>1 0 0</xyz>
                             <limit>
@@ -1309,6 +1385,7 @@
                         <axis>
                             <dynamics>
                                 <friction>1.0</friction>
+                                <damping>.1</damping>
                             </dynamics>
                             <xyz>1 0 0</xyz>
                             <limit>
@@ -1324,6 +1401,7 @@
                         <axis>
                             <dynamics>
                                 <friction>1.0</friction>
+                                <damping>.1</damping>
                             </dynamics>
                             <xyz>1 0 0</xyz>
                             <limit>
@@ -1339,6 +1417,7 @@
                         <axis>
                             <dynamics>
                                 <friction>1.0</friction>
+                                <damping>.1</damping>
                             </dynamics>
                             <xyz>1 0 0</xyz>
                             <limit>
@@ -1354,6 +1433,7 @@
                         <axis>
                             <dynamics>
                                 <friction>1.0</friction>
+                                <damping>.1</damping>
                             </dynamics>
                             <xyz>1 0 0</xyz>
                             <limit>
@@ -1369,6 +1449,7 @@
                         <axis>
                             <dynamics>
                                 <friction>1.0</friction>
+                                <damping>.1</damping>
                             </dynamics>
                             <xyz>1 0 0</xyz>
                             <limit>
@@ -1384,6 +1465,7 @@
                         <axis>
                             <dynamics>
                                 <friction>1.0</friction>
+                                <damping>.1</damping>
                             </dynamics>
                             <xyz>1 0 0</xyz>
                             <limit>
@@ -1399,6 +1481,7 @@
                         <axis>
                             <dynamics>
                                 <friction>1.0</friction>
+                                <damping>.1</damping>
                             </dynamics>
                             <xyz>1 0 0</xyz>
                             <limit>
@@ -1414,6 +1497,23 @@
                         <axis>
                             <dynamics>
                                 <friction>1.0</friction>
+                                <damping>.1</damping>
+                            </dynamics>
+                            <xyz>1 0 0</xyz>
+                            <limit>
+                                <upper>0</upper>
+                                <lower>0</lower>
+                            </limit>
+                        </axis>
+			    </joint>
+            <joint type="revolute" name="camera_joint">
+                    <pose>0 0 0 0 0 0</pose>
+                    <child>camera_link</child>
+                    <parent>lower_triangle_holder</parent>
+                        <axis>
+                            <dynamics>
+                                <friction>1.0</friction>
+                                <damping>.1</damping>
                             </dynamics>
                             <xyz>1 0 0</xyz>
                             <limit>

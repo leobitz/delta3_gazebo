@@ -63,17 +63,17 @@ v3r = [np.radians(90), np.radians(90), np.radians(-120)]
 orients = np.vstack((v1r, v2r, v3r)) 
 upper_arms = np.hstack((harm_v, orients))
 lower_orient = orients.copy()
-links.append(create_link("upper_arm1", upper_arms[0], thickness, r))
-links.append(create_link("upper_arm2", upper_arms[1], thickness, r))
-links.append(create_link("upper_arm3", upper_arms[2], thickness, r))
+links.append(create_link("upper_arm1", upper_arms[0], thickness, r, mass=.01))
+links.append(create_link("upper_arm2", upper_arms[1], thickness, r, mass=.01))
+links.append(create_link("upper_arm3", upper_arms[2], thickness, r, mass=.01))
 # r = 0.8
 
 harm_v[:, 0:2] +=  get_unit_vector(vs[:, 0:2]) * .5 * r
 upper_arms = np.hstack((harm_v, side_orients))
 r = .5
-links.append(create_link("hor_upper_arm1", upper_arms[0], thickness, r))
-links.append(create_link("hor_upper_arm2", upper_arms[1], thickness, r))
-links.append(create_link("hor_upper_arm3", upper_arms[2], thickness, r))
+links.append(create_link("hor_upper_arm1", upper_arms[0], thickness, r, mass=.01))
+links.append(create_link("hor_upper_arm2", upper_arms[1], thickness, r, mass=.01))
+links.append(create_link("hor_upper_arm3", upper_arms[2], thickness, r, mass=.01))
 r = 1
 lower_vertexes = vs * 0.2
 varms = vs - lower_vertexes
@@ -103,9 +103,9 @@ lvs = np.vstack((vs1, vs2, vs3))
 # upper traingle pos = Position + Orientiation
 lower_traingle = np.hstack((lvs, orients))
 la = .5
-links.append(create_link("lower_side1", lower_traingle[0], thickness, la))
-links.append(create_link("lower_side2", lower_traingle[1], thickness, la))
-links.append(create_link("lower_side3", lower_traingle[2], thickness, la))
+links.append(create_link("lower_side1", lower_traingle[0], thickness, la, mass=.01))
+links.append(create_link("lower_side2", lower_traingle[1], thickness, la, mass=.01))
+links.append(create_link("lower_side3", lower_traingle[2], thickness, la, mass=.01))
 
 # lower_ribs = lv.copy()
 # lower_ribs[:, 0:2] = lower_ribs[:, 0:2] / 2
@@ -119,9 +119,9 @@ lower_ribs = np.hstack((llvs, lower_orient))
 
 lower_rib_length = 2*h/3
 lower_rib_len = h / 3
-links.append(create_link("lower_rib1", lower_ribs[0], thickness, (h/3)))
-links.append(create_link("lower_rib2", lower_ribs[1], thickness, (h/3)))
-links.append(create_link("lower_rib3", lower_ribs[2], thickness, (h/3)))
+links.append(create_link("lower_rib1", lower_ribs[0], thickness, (h/3),mass=.01))
+links.append(create_link("lower_rib2", lower_ribs[1], thickness, (h/3), mass=.01))
+links.append(create_link("lower_rib3", lower_ribs[2], thickness, (h/3), mass=.01))
 
 upper_arm_end = vs[:, 0:3].copy()
 upper_arm_end[:, 0:2]  += get_unit_vector(vs[:, 0:2])  * r
@@ -144,15 +144,15 @@ dis = .1 * get_distance(dir_vecs).flatten()
 vertical_arm_ = vertical_arm_pos + (dir_vecs * .1)
 vertical_arm = np.hstack((vertical_arm_, orients))
 
-links.append(create_link("vertical_arm1_left", vertical_arm[0], thickness, va))
-links.append(create_link("vertical_arm2_left", vertical_arm[1], thickness, va))
-links.append(create_link("vertical_arm3_left", vertical_arm[2], thickness, va))
+links.append(create_link("vertical_arm1_left", vertical_arm[0], thickness, va, mass=.01))
+links.append(create_link("vertical_arm2_left", vertical_arm[1], thickness, va, mass=.01))
+links.append(create_link("vertical_arm3_left", vertical_arm[2], thickness, va, mass=.01))
 vertical_arm_ = vertical_arm_pos - (dir_vecs * .1)
 vertical_arm = np.hstack((vertical_arm_, orients))
 
-links.append(create_link("vertical_arm1_right", vertical_arm[0], thickness, va))
-links.append(create_link("vertical_arm2_right", vertical_arm[1], thickness, va))
-links.append(create_link("vertical_arm3_right", vertical_arm[2], thickness, va))
+links.append(create_link("vertical_arm1_right", vertical_arm[0], thickness, va, mass=.01))
+links.append(create_link("vertical_arm2_right", vertical_arm[1], thickness, va, mass=.01))
+links.append(create_link("vertical_arm3_right", vertical_arm[2], thickness, va, mass=.01))
 
 
 joints = []
@@ -168,8 +168,8 @@ holder_length = 1
 u_traingle_holder = create_link("upper_triangle_holder", [0, 0, (delta_height + delta_z + holder_length/2), 0, 0, 0], thickness, holder_length)
 links.append(u_traingle_holder)
 
-lower_holder_length = .4
-l_traingle_holder = create_link("lower_triangle_holder", [0, 0, (delta_z - lower_holder_length/2), 0, 0, 0], thickness, lower_holder_length)
+lower_holder_length = .2
+l_traingle_holder = create_link("lower_triangle_holder", [0, 0, (delta_z - lower_holder_length/2), 0, 0, 0], thickness, lower_holder_length, mass=.01)
 links.append(l_traingle_holder)
 
 
@@ -185,7 +185,9 @@ links.append(wall)
 main_holder_length = holder_length + delta_height + delta_z - wall_hight
 main_holder = create_link("main_holder", [0, rib_length * 2, main_holder_length/2 + wall_hight, 0, 0, 0], thickness, main_holder_length)
 links.append(main_holder)
-
+camera_z = (delta_z - lower_holder_length/2) - lower_holder_length/2 - .05
+camera = camera_link("camera_link", [0, 0, camera_z, 0, np.radians(90), 0], .05, .1)
+links.append(camera)
 joints.append(create_joint("upper_s2_s1", "upper_side1", "upper_side2", [0, 0, a/2, 0, 0, 0], [0, 0, 1], 0, 0))
 joints.append(create_joint("upper_s2_s3", "upper_side3", "upper_side2", [0, 0, -a/2, 0, 0, 0], [0, 0, 1], 0, 0))
 joints.append(create_joint("upper_s3_s1", "upper_side1", "upper_side3", [0, 0, a/2, 0, 0, 0], [0, 0, 1], 0, 0))
@@ -214,13 +216,13 @@ joints.append(create_joint("vertical_arm_a1_v1_left", "hor_upper_arm1", "vertica
 joints.append(create_joint("vertical_arm_a2_v2_left", "hor_upper_arm2", "vertical_arm2_left", [0, 0, va/2, 0, 0, 0], [0, 1, 0], rad(90), -rad(90), jtype='ball'))
 joints.append(create_joint("vertical_arm_a3_v3_left", "hor_upper_arm3", "vertical_arm3_left", [0, 0, va/2, 0, 0, 0], [0, 1, 0], rad(90), -rad(90), jtype='ball'))
 
-joints.append(create_joint("lvertical_arm_a1_v1_right", "lower_side1", "vertical_arm1_right", [0, 0, -va/2, 0, 0, 0], [1, 1, 0], rad(90), -rad(90), jtype='ball'))
-joints.append(create_joint("lvertical_arm_a2_v2_right", "lower_side2", "vertical_arm2_right", [0, 0, -va/2, 0, 0, 0], [1, 1, 0], rad(90), -rad(90), jtype='ball'))
-joints.append(create_joint("lvertical_arm_a3_v3_right", "lower_side3", "vertical_arm3_right", [0, 0, -va/2, 0, 0, 0], [1, 1, 0], rad(90), -rad(90), jtype='ball'))
+joints.append(create_joint("lvertical_arm_a1_v1_right", "lower_side1", "vertical_arm1_right", [0, 0, -va/2, 0, 0, 0], [0, 1, 0], rad(90), -rad(90), jtype='ball'))
+joints.append(create_joint("lvertical_arm_a2_v2_right", "lower_side2", "vertical_arm2_right", [0, 0, -va/2, 0, 0, 0], [0, 1, 0], rad(90), -rad(90), jtype='ball'))
+joints.append(create_joint("lvertical_arm_a3_v3_right", "lower_side3", "vertical_arm3_right", [0, 0, -va/2, 0, 0, 0], [0, 1, 0], rad(90), -rad(90), jtype='ball'))
 
-joints.append(create_joint("lvertical_arm_a1_v1_left", "lower_side1", "vertical_arm1_left", [0, 0, -va/2, 0, 0, 0], [1, 1, 0], rad(90), -rad(90), jtype='ball'))
-joints.append(create_joint("lvertical_arm_a2_v2_left", "lower_side2", "vertical_arm2_left", [0, 0, -va/2, 0, 0, 0], [1, 1, 0], rad(90), -rad(90), jtype='ball'))
-joints.append(create_joint("lvertical_arm_a3_v3_left", "lower_side3", "vertical_arm3_left", [0, 0, -va/2, 0, 0, 0], [1, 1, 0], rad(90), -rad(90), jtype='ball'))
+joints.append(create_joint("lvertical_arm_a1_v1_left", "lower_side1", "vertical_arm1_left", [0, 0, -va/2, 0, 0, 0], [0, 1, 0], rad(90), -rad(90), jtype='ball'))
+joints.append(create_joint("lvertical_arm_a2_v2_left", "lower_side2", "vertical_arm2_left", [0, 0, -va/2, 0, 0, 0], [0, 1, 0], rad(90), -rad(90), jtype='ball'))
+joints.append(create_joint("lvertical_arm_a3_v3_left", "lower_side3", "vertical_arm3_left", [0, 0, -va/2, 0, 0, 0], [0, 1, 0], rad(90), -rad(90), jtype='ball'))
 
 
 joints.append(create_joint("upper_rib1_s1", "upper_side1", "upper_rib1", [0, 0, rib_length/2, 0, 0, 0], [1, 0, 0], 0, 0))
@@ -248,6 +250,7 @@ joints.append(create_joint("lower_rib13", "lower_rib1", "lower_rib3", [0, 0, -lo
 joints.append(create_joint("u_tria_v_h_holder", "horizontal_holder", "upper_triangle_holder", [0, 0, holder_length/2, 0, 0, 0], [1, 0, 0], 0, 0))
 joints.append(create_joint("h_v_holder", "main_holder", "horizontal_holder", [0, 0, -horizontal_holder_length/2, 0, 0, 0], [1, 0, 0], 0, 0))
 joints.append(create_joint("v_wall_holder", "wall", "main_holder", [0, 0, -main_holder_length/2, 0, 0, 0], [1, 0, 0], 0, 0))
+joints.append(create_joint("camera_joint", "lower_triangle_holder", "camera_link", [0, 0, 0, 0, 0, 0], [1, 0, 0], 0, 0))
 
 plugins.append(plugin("arm_control", "libdelta3_gazebo.so"))
 
