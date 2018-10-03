@@ -174,7 +174,7 @@ links.append(l_traingle_holder)
 
 
 horizontal_holder_length = 2 * rib_length 
-horizontal_holder = create_link("horizontal_holder", [0, rib_length, (delta_height + delta_z + holder_length), np.radians(90), 0, 0], thickness, horizontal_holder_length)
+horizontal_holder = create_link("horizontal_holder", [0, rib_length, (delta_height + delta_z + holder_length), np.radians(90), 0, 0], thickness, horizontal_holder_length, inertial=1.0)
 links.append(horizontal_holder)
 
 wall_hight = .5
@@ -183,7 +183,7 @@ wall = create_wall("wall", [0, rib_length * 2, wall_hight/2, 0, 0, 0], wall_thic
 links.append(wall)
 
 main_holder_length = holder_length + delta_height + delta_z - wall_hight
-main_holder = create_link("main_holder", [0, rib_length * 2, main_holder_length/2 + wall_hight, 0, 0, 0], thickness, main_holder_length)
+main_holder = create_link("main_holder", [0, rib_length * 2, main_holder_length/2 + wall_hight, 0, 0, 0], .2, main_holder_length, inertial=1.0)
 links.append(main_holder)
 camera_z = (delta_z - lower_holder_length/2) - lower_holder_length/2 - .05
 camera = camera_link("camera_link", [0, 0, camera_z, 0, np.radians(90), 0], .05, .1)

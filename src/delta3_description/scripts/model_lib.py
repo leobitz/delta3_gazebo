@@ -84,7 +84,7 @@ def create_world(links):
     """.format(ls)
     return world
 
-def create_link(name, pos, radius, length, mass=.1):
+def create_link(name, pos, radius, length, mass=.1, inertial=0.0005):
     link = """
     <link name="{8}">
         <pose>{0} {1} {2} {3} {4} {5}</pose>
@@ -92,9 +92,9 @@ def create_link(name, pos, radius, length, mass=.1):
         <inertial>
             <mass>{9}</mass>
             <inertia>
-                <ixx>0.0005</ixx>
-                <iyy>0.0005</iyy>
-                <izz>0.0005</izz>
+                <ixx>{10}</ixx>
+                <iyy>{10}</iyy>
+                <izz>{10}</izz>
             </inertia>
         </inertial>
         <collision name="col">
@@ -114,7 +114,7 @@ def create_link(name, pos, radius, length, mass=.1):
             </geometry>
           </visual>
     </link>
-    """.format(pos[0],pos[1],pos[2],pos[3],pos[4],pos[5], radius, length, name, mass)
+    """.format(pos[0],pos[1],pos[2],pos[3],pos[4],pos[5], radius, length, name, mass, inertial)
     return link
 
 def create_wall(name, pos, radius, length, mass=500):
@@ -185,48 +185,56 @@ def deg(rad):
 def camera_link(name, pos, radius, length, mass=.1):
     text = """
     <link name="{8}">
-            <pose>{0} {1} {2} {3} {4} {5}</pose>
-            <visual name="visual">
-                <geometry>
-                    <cylinder>
-                        <radius>{6}</radius>
-                        <length>{7}</length>
-                    </cylinder>
-                </geometry>
-            </visual>
-            <collision name="col">
-                <geometry>
-                    <cylinder>
-                        <radius>{6}</radius>
-                        <length>{7}</length>
-                    </cylinder>
-                </geometry>
-            </collision>
-            <sensor type="camera" name="camera1">
-                <update_rate>30.0</update_rate>
-                <camera name="head">
-                    <horizontal_fov>1.3962634</horizontal_fov>
-                    <image>
-                        <width>800</width>
-                        <height>800</height>
-                        <format>R8G8B8</format>
-                    </image>
-                    <clip>
-                        <near>0.02</near>
-                        <far>10</far>
-                    </clip>
-                </camera>
-                <always_on>1</always_on>
-                <visualize>1</visualize>
-                <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
-                    <alwaysOn>true</alwaysOn>
-                    <updateRate>0.0</updateRate>
-                    <cameraName>delta3/camera</cameraName>
-                    <imageTopicName>raw_image</imageTopicName>
-                    <cameraInfoTopicName>camera_info</cameraInfoTopicName>
-                    <frameName>camera_link</frameName>
-                </plugin>
-            </sensor>
-        </link>
+        <inertial>
+                <mass>0.01</mass>
+                <inertia>
+                    <ixx>0.0005</ixx>
+                    <iyy>0.0005</iyy>
+                    <izz>0.0005</izz>
+                </inertia>
+        </inertial>
+        <pose>{0} {1} {2} {3} {4} {5}</pose>
+        <visual name="visual">
+            <geometry>
+                <cylinder>
+                    <radius>{6}</radius>
+                    <length>{7}</length>
+                </cylinder>
+            </geometry>
+        </visual>
+        <collision name="col">
+            <geometry>
+                <cylinder>
+                    <radius>{6}</radius>
+                    <length>{7}</length>
+                </cylinder>
+            </geometry>
+        </collision>
+        <sensor type="camera" name="camera1">
+            <update_rate>30.0</update_rate>
+            <camera name="head">
+                <horizontal_fov>1.3962634</horizontal_fov>
+                <image>
+                    <width>800</width>
+                    <height>800</height>
+                    <format>R8G8B8</format>
+                </image>
+                <clip>
+                    <near>0.02</near>
+                    <far>10</far>
+                </clip>
+            </camera>
+            <always_on>1</always_on>
+            <visualize>1</visualize>
+            <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
+                <alwaysOn>true</alwaysOn>
+                <updateRate>0.0</updateRate>
+                <cameraName>delta3/camera</cameraName>
+                <imageTopicName>raw_image</imageTopicName>
+                <cameraInfoTopicName>camera_info</cameraInfoTopicName>
+                <frameName>camera_link</frameName>
+            </plugin>
+        </sensor>
+    </link>
     """.format(pos[0],pos[1],pos[2],pos[3],pos[4],pos[5], radius, length, name)
     return text
