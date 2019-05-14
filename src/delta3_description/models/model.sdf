@@ -3,6 +3,17 @@
 <model name="delta3">
     <static>false</static>
     
+    <joint name="fixed_to_ground" type="revolute">
+        <parent>world</parent>
+        <child>wall</child>
+        <axis>
+                            <xyz>0 1 0</xyz>
+                            <limit>
+                                <upper>0</upper>
+                                <lower>0</lower>
+                            </limit>
+                        </axis>
+  </joint>
     <link name="upper_side1">
         <pose>0.0 -1.4433756729740643 5.0 0.0 1.5707963267948966 0.0</pose>
         <gravity>0</gravity>
